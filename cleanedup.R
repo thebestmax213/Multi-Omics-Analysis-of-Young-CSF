@@ -513,7 +513,7 @@ pheatmap(
 
 
 # =========================================================
-# PHASE 6: GSEA
+# PHASE 7: GSEA
 # =========================================================
 gse <- run_gsea_bp_safe(res, dds)
 
@@ -530,7 +530,7 @@ if (!is.null(gse) && nrow(gse@result) > 0) {
 
 
 # =========================================================
-# PHASE 7: ASTROCYTE A1 TOXICITY SCORE
+# PHASE 9: ASTROCYTE A1 TOXICITY SCORE
 # =========================================================
 a1_genes_symbol <- c(
   "C3", "H2-D1", "Serpina3n", "Ggta1", "Gbp2", "Fbln5",
@@ -582,7 +582,7 @@ if (length(valid_a1) > 2) {
 
 
 # =========================================================
-# PHASE 9: AD REVERSAL ANALYSIS (GSE161848)
+# PHASE 11: AD REVERSAL ANALYSIS (GSE161848)
 # =========================================================
 my_res <- read.csv("Phase5_DEGs_Final.csv")
 
@@ -712,7 +712,7 @@ print(paste(
 
 
 # =========================================================
-# PHASE 8: UPSTREAM TF ENRICHMENT (ENRICHR)
+# PHASE 13: UPSTREAM TF ENRICHMENT (ENRICHR)
 # =========================================================
 if (!requireNamespace("enrichR", quietly = TRUE)) {
   install.packages("enrichR")
