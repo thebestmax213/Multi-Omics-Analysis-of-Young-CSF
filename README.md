@@ -46,7 +46,3 @@ Phase 9: Master Regulator Analysis
 Queries the Enrichr API (ChEA, ENCODE, TRRUST databases).
 
 Identifies upstream transcription factors (e.g., Klf6, Tcf7) and epigenetic complexes driving the transcriptomic rescue.
-
-Phase 10: Automated Export
-
-Compiles and exports all generated ggplot2 and pheatmap figures as high-resolution (300 DPI) PDFs into a designated /Figures directory.
